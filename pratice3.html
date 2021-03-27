@@ -1,0 +1,125 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+        
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">Home</li>
+        </ol>
+      </nav>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+    </div>
+    <div class="container mt-5 card p-3 bg-danger" >
+        
+  <fieldset class="RFS">
+    <legend class="RFSL">Search By Candidate Name,Father Name &amp; DOB </legend>
+    <table width="100%" cellpadding="0" cellspacing="0">
+        <tbody><tr>
+            <td style="width: 10px;">&nbsp;</td>
+            <td style="width: 150px; vertical-align: top;">
+                <span id="FormsPH_lblYear">Year</span>
+                <span style="color: Red">*</span>
+                <span style="color: Red">*</span>&nbsp;: 
+            </td>
+            <td style="width: 210px;">
+                <select name="ctl00$FormsPH$ddlYear" onchange="javascript:setTimeout('__doPostBack(\'ctl00$FormsPH$ddlYear\',\'\')', 0)" id="FormsPH_ddlYear" style="height:36px;">
+<option selected="selected" value="0">Select</option>
+<option value="2018">2018</option>
+<option value="2019">2019</option>
+<option value="2020">2020</option>
+<option value="2021">2021</option>
+
+</select>
+            </td>
+</tr>
+
+        <tr>
+            <td style="width: 10px;">&nbsp;</td>
+            <td style="width: 150px;">
+                <span id="FormsPH_lblAdvertisement">Advertisement No.</span>
+                <span style="color: Red">*</span>&nbsp;: 
+            </td>
+            <td style="width: 210px;">
+                <select name="ctl00$FormsPH$ddlAdvertisement" id="FormsPH_ddlAdvertisement" style="height:36px;width:96%;">
+
+</select>
+            </td>
+            <td style="width: 150px;">
+                <span id="FormsPH_lblCandidateName">Enter Candidate Name</span>
+                <span style="color: Red">*</span>&nbsp;: 
+            </td>
+            <td style="width: 210px;">
+                <input name="ctl00$FormsPH$txtCandidateName" type="text" id="FormsPH_txtCandidateName" style="height:28px;width:196px;">
+            </td>
+        </tr>
+<tr>
+<td style="width: 10px;">&nbsp;</td>
+<td style="width: 150px;">
+    <span id="FormsPH_lblFatherName">Enter Father Name</span>
+    <span style="color: Red">*</span>&nbsp;: 
+</td>
+<td style="width: 210px;">
+    <input name="ctl00$FormsPH$txtFatherName" type="text" id="FormsPH_txtFatherName" style="height:28px;width:196px;">
+</td>
+<td style="width: 150px;">
+    <span id="FormsPH_lblDOB">Enter Date of Birth</span>
+    <span style="color: Red">*</span>&nbsp;: 
+</td>
+<td style="width: 130px;">
+    <input name="ctl00$FormsPH$txtDOB" type="text" id="FormsPH_txtDOB" style="height:28px;width:105px;">
+    
+</td>
+<td style="width: 150px;">
+    <input type="submit" name="ctl00$FormsPH$btnDownloadHallticket" value="View Hallticket" onclick="return Validate();" id="FormsPH_btnDownloadHallticket" class="positive">
+</td>
+<td style="width: 20px;">&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 10px;">&nbsp;</td>
+<td colspan="7">
+    <span id="FormsPH_lblBirthDOB" style="color:Blue;"> Date of Birth should be as per Application. Date format DD/MM/YYYY.</span></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+</tr>
+<a href="https://uksssconline.in/Public/DownloadHallticketCandidateNameDOB.aspx">login</a>
+
+</tbody></table>
+</fieldset>
+</div>
+<nav aria-label="Page navigation example"><br>
+    <ul class="pagination justify-content-center">
+      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+  </nav>
